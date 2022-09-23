@@ -76,6 +76,10 @@ origin是自定义的名字，可以自己随便决定一个哦。
 
 `git push <name> <分支名>` 推送本地仓库到远程仓库的什么什么分支。
 
+`git push -u origin` 带上-u 参数其实就相当于记录了push到远端分支的默认值.
+
+​				    这样当下次我们还想要继续push的这个远端分支的时候推送命令就可以简写成 `git push` 即可。
+
 `git fetch` 如果远程仓库出现了别的修改，你可以靠这个命令发现。然后决定要不要用 `git merge` 将你现在所处的分支合并。
 
 `git merge origin/master` 这句话的意思是，将`origin`这个远程端的`master`分支与你现在所处的分支合并。
